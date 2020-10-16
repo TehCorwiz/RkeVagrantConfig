@@ -11,3 +11,15 @@ Future:
 - Might switch to CentOS to better match other environments I work with.
 - Static IPs for easier Rancher config.
 
+**Usage** (all nodes):
+
+- Edit `Vagrantfile` to set number of nodes.
+- `vagrant up` to start and provision nodes.
+- `vagrant ssh node1` to get a shell in the 'command' node.
+- `vagrant suspend` to shut down nodes.
+- `vagrant destroy` to tear down nodes.
+
+**Usage** (single node):
+
+- `vagrant up node1`
+- Other commands same as above.
