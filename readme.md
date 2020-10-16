@@ -1,4 +1,4 @@
-*This is my personal config for setting up a Rancher playground locally.*
+**This is my personal config for setting up a Rancher playground locally.**
 
 Features:
 
