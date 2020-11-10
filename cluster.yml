@@ -8,7 +8,7 @@ nodes:
   - controlplane
   - etcd
   hostname_override: ""
-  user: corwin
+  user: vagrant
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -24,7 +24,7 @@ nodes:
     - worker
     - etcd
   hostname_override: ""
-  user: corwin
+  user: vagrant
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -32,13 +32,13 @@ nodes:
   ssh_cert_path: ""
   labels: {}
   taints: []
-- address: "10.2.2.202"
+- address: "10.2.2.203"
   port: "22"
   internal_address: ""
   role:
     - worker
   hostname_override: ""
-  user: corwin
+  user: vagrant
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
