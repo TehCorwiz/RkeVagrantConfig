@@ -27,4 +27,3 @@ sudo apt-get install -y -qq docker-ce docker-ce-cli containerd.io
 
 # Test Docker
 sudo docker run hello-world
-

@@ -6,4 +6,3 @@ sudo wget -q $RKE_URL -O $TARGET_RKE
 sudo chmod 755 $TARGET_RKE
 
 rke --version
-
