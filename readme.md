@@ -26,5 +26,8 @@ Node IPs are in the 10.2.2.* block starting at 10.2.2.201.
 - `cd /vagrant`
   - The `./cluster` folder which contains the `cluster.yml` and related files is mounted at `/vagrant` inside the VMs.
 - `rke up`
-- `vagrant suspend` to shut down nodes.
+  - Afterwards I suggest exiting the VM and creating a snapshot through vagrant to make things easier if you need to backup.
+  - `vagrant snapshot save "after-rke"`
+- `vagrant suspend` to put nodes to sleep.
+- `vagrant resume` to wake them back up.
 - `vagrant destroy` to tear down nodes.
