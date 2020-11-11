@@ -33,6 +33,7 @@ Vagrant.configure("2") do |config|
 # If node is the first then we'll use it as our command node.
       if n == 1
         node.vm.provision :shell, path: 'install/rke.sh'
+        node.vm.provision :shell, path: 'install/helm.sh'
         node.vm.provision :shell, path: 'install/kubectl.sh'
       end
 
