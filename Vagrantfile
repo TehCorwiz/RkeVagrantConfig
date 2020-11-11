@@ -13,9 +13,9 @@ Vagrant.configure("2") do |config|
       ip_frag = 200 + n
       node.vm.network "private_network", ip: "10.2.2.#{ip_frag}"
 
-      node.vm.synced_folder ".", "/vagrant"
+      node.vm.synced_folder "./cluster", "/vagrant"
 
-# This shares your Vagrant `insecure_private_key` between the nodeVMs.
+# This shares your Vagrant `insecure_private_key` between the node VMs.
 # This is my shortcut solution to configuring SSH-ing between VMs.
 # There are more correct and more robust solutions, but they're also more complex.
 # If it wasn't obvious DON'T DO THIS IN PRODUCTION!

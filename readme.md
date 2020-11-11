@@ -23,7 +23,7 @@ Node IPs are in the 10.2.2.* block starting at 10.2.2.201.
 - Edit `Vagrantfile` to set number of nodes.
 - `vagrant up` to start and provision nodes.
 - `vagrant ssh node1` to get a shell in the 'command' node.
-- The project path is mounted at `/vagrant` inside the VMs.
+- The `./cluster` folder which contains the `cluster.yml` and related files is mounted at `/vagrant` inside the VMs.
   - `cd /vagrant`
 - `rke up`
 - `vagrant suspend` to shut down nodes.
